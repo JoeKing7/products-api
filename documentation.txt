@@ -1,0 +1,12 @@
+1. Singup /api/auth/singup 
+  .post with body 
+  { 
+    "username": "joe",
+    "email": "joe@mail.com",
+    "password": "joe123",
+    "roles": ["admin"] //admin, moderator, user
+  }
+2. get a TOKEN and use it each get, post, put, delete  
+header: 
+key: x-access-token
+value: token
